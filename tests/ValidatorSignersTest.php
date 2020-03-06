@@ -5,7 +5,6 @@ namespace App\Tests;
 use papalapa\jwt\Decoder;
 use papalapa\jwt\KeyStorage;
 use papalapa\jwt\Signers\HS256;
-use papalapa\jwt\Validator;
 use PHPUnit\Framework\TestCase;
 
 class ValidatorSignersTest extends TestCase

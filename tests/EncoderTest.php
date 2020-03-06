@@ -53,7 +53,7 @@ class EncoderTest extends TestCase
         $encoder = new Encoder('TEST', $keyStorage);
 
         $payload = ['username' => 'John Doe'];
-        $expectedToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VybmFtZSI6IkpvaG4gRG9lIn0.iG8EV3QD8Phbz9tpz7qsJi3NzR29wnay9Hrz-vJHemzWcgzlwUzFN-H79_a8tQ0I6-DwCSqw9O_zJk87CyJTI4kLzQwERAB_326xlEx_AuRyC8ACL_U8q_475h-En03-kja25FdsV2AxRXle-wGmElW7IxN6Z5AhsSpisZFMa0WKVXMsyI-zT3cPvPscbe54HtvFNeBwczVIJwA2Qq489cmmnccnfYDS20DhzZzRdXpOpcwl_6mNY2GuWnu1atCRz0hOIqN4zuvua8Gg9EwYx0BHXr4cmyIH-B5wQ-na-ZYAq9tRhR_9W3l8qg7xqUwKTSN89eBv7D-OlRfFCNAXrQ';
+        $expectedToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VybmFtZSI6IkpvaG4gRG9lIn0.1UQIpqFCaA_RphasLcaHQF9dYP1W7Hajv-f6IR1ZE3_BKC3JHPSZlIUS2UUIieryo3KXzoozAA31nNvFWxV2V2uCp_vMY9ZOJyqknaHe7yzUI-oezRec43eQjsNu-WvLDTfm8zLCk4tD7hvuKyMwJufB2XeiEhr7zqf54m3FqDPDnDoJdGPmvh2tOxW7v-L7pzoTd4tjCyj2rDRP-m6S9ynW7m2HnuakDAfvtIO2C24a8HrProope35mTdUdzakeVgC0SnL05OJoGPki9Dy11Td-UtcD93a0kJNKqgYOP4Y-X1HyF6A5JETM8yaWsTLLtY-qEcCsFpj8CTbljaDyWA';
 
         $this->assertEquals($expectedToken, $encoder->encode(new RS256(), $payload));
     }
@@ -64,7 +64,7 @@ class EncoderTest extends TestCase
         $encoder = new Encoder('TEST', $keyStorage);
 
         $payload = ['username' => 'John Doe'];
-        $expectedToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzM4NCJ9.eyJ1c2VybmFtZSI6IkpvaG4gRG9lIn0.LYk8m8cjYiJ2Hfef-hqgHhno9C_qp1SB4TWqHYTNLvSpZD2tH0Wsu-ATBVY2OdkEEoOJhVZGLWksnB7mWmDixybDK6UHj4gur_LZBd1YvWjUqB7Gee5bnciDAOteRVaP8c_f5YVXYGParFc6PVveY-EybG9ej0sukjAZenodeMOPMh8ooUCzcD4UUa3NnjyCu8sTk1cUGTEVca64BZmNirXj88GMmpDGqcNovHItjmhqtvKmRyGP4MVorG2pgy06kRkwPyXOF4X3SwW6gh_OsUF6QN-__N1DdSraFa_dDnunopxXhfBLKHeeywX4yC7DcNci3IVXq2J7NyqCJIuqPw';
+        $expectedToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzM4NCJ9.eyJ1c2VybmFtZSI6IkpvaG4gRG9lIn0.TmCLXyRrvilwplSog_4QG7SJeEM1O8__grWBrq67dW1M54FFBMsEpsFoMFoBORpeOoHAU3Z24EaluTuSiOKOqHX8EYMUtdVbrNDjMyjzUyHdcg47fJGQtP92aSCGZMd6vFVjK0GfOxLkbol-QnHfil4K2NwrcYCvYMHKEk-ogv0zX-fSAz9TVOQ6PKf7uBsuMDvpeql5V91ObC2-cROslHF-5BjSsLUrubn0guxT0cuiHjBOBdCD8T4uEnMPaV6hXg1Ewsg3_TV8-m_dzA50-cF1P_aCM9YtgsYCF4ft6cBAlPtxnypt9lxscRHAC0ukXkQvCaqhYSCcrdNeKWOzxQ';
 
         $this->assertEquals($expectedToken, $encoder->encode(new RS384(), $payload));
     }
@@ -75,7 +75,7 @@ class EncoderTest extends TestCase
         $encoder = new Encoder('TEST', $keyStorage);
 
         $payload = ['username' => 'John Doe'];
-        $expectedToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJ1c2VybmFtZSI6IkpvaG4gRG9lIn0.cXZCCqSA43zdqr3z1VgWuzBIw9gACkmMxicuelkJ1wpy4HzG2ws_UF6Acib2oCYZFgY9gsc9HdzxffhmskEPOiwQyPPjxjg91RszFLdk-iKxdxQOXttKud8MmIs4brP1X9zZJtGyhteNaFmtVsl-sj7bJ5aYv7Epnk5GDodxzysFath5O4RdRe7VF7_DRaPJ3C3-DpoHYK1b8XHc2Lpl-eQls2bKEOnle_jd-N6zTJOJTgRe2KSjrKJweMu3oa0Qe1jGMFXYZbnxop7o-J8AOM6Pb9dBbybilBB1Ah-R0v4JPJsuOl805svtItkRGAb_tCIRtBdGjtpi1F-_0gh1Gw';
+        $expectedToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJ1c2VybmFtZSI6IkpvaG4gRG9lIn0.bHSzTttP1ycqZMWAl51lsYwr-uFc4CGDHhYABH8zzdE5sJVyPkKh-ksjiGyKTsWVbnpQDqIG3y794eCKkAiua1SyhV6nT27MpdDKfAJJqFAt8H1J9uc3Rjc_Xs7ZFy5rHo6qzxIjgn9CwksUeq7SpWbWXiWFx33c9FpNwyAucEE8sjkMDkiiJW3TJQJxESP1FTpSALknuYSJn82O9enIi8gsNmg-TSMlpr6STS5Fn4Qbc-Dz0mcvE_PUKLjXL5s1rlT2PWrP9lTWoM7HNcBT05LazE9ZFBwTkoKtHzQ9dPdIYCrNxBAekMEFm6HptWUfviRqURdyaS4d0Y2JmvnYuA';
 
         $this->assertEquals($expectedToken, $encoder->encode(new RS512(), $payload));
     }
