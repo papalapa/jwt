@@ -1,0 +1,43 @@
+{
+    "name"        : "papalapa/jwt",
+    "license"     : "MIT",
+    "description" : "Library to Encode/Decode JWT (Json Web Tokens) ",
+    "homepage"    : "https://github.com/papalapa/jwt",
+    "keywords"    : [
+        "php",
+        "jwt"
+    ],
+    "type"        : "library",
+    "require"     : {
+        "php"        : ">=7.2",
+        "ext-json"   : "^1.6",
+        "ext-openssl": "^7.2"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "^8.5"
+    },
+    "authors"     : [
+        {
+            "name" : "Dmitriy K.",
+            "email": "dmitriy.kim@mail.ru"
+        }
+    ],
+    "autoload"    : {
+        "psr-4"                : {
+            "papalapa\\jwt\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "papalapa\\jwt\\": "src/",
+            "App\\Tests\\"   : "tests/"
+        }
+    },
+    "scripts"     : {
+        "test"    : "vendor/bin/phpunit --colors=always --do-not-cache-result",
+        "coverage": "vendor/bin/phpunit --colors=always --do-not-cache-result --coverage-html coverage"
+    }
+}
